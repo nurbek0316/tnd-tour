@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+.container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_tool{
+    margin-bottom: 100px;
+}
+
+.tab_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tab{
+    width: 100%;
+    margin-right: 8px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px 12px 0 0;
+    background: rgba(96, 100, 112, 0.6);
+    border-bottom: none;
+    color: white;
+}
+.tab:last-child{
+    margin-right: 0;
+}
+.tab_list > .active{
+    background-color: white;
+    color: black;
+}
+
+.tab_pane{
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    display: none;
+}
+
+
+.tab_container{
+    padding: 24px;
+}
+
+/* .tab_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.active{
+    display: block;
+}
 .mountain-scene{
     background-image: url("../public/first-background-parallax.png");
     z-index: 1001;

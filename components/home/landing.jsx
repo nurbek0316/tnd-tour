@@ -1,8 +1,9 @@
 'use client';
 
 import Balancer from "react-wrap-balancer";
+import { useState} from "react";
+import Mountains from "@/components/layout/mountains";
 import NavTool from "@/components/layout/navtool";
-import { useState } from "react";
 import { DEPLOY_URL } from "@/lib/constants";
 
 export default function Landing() {
@@ -60,6 +61,8 @@ export default function Landing() {
         </div>
         <div className="mb-[1000px]"></div>
       </div>
+      <Mountains/>
+
       <NavTool />
     </>
   )

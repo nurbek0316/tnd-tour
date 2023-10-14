@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container{
-    max-width: 1280px;
+    max-width: 1295px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -25,11 +25,13 @@
     margin-right: 8px;
     text-align: center;
     padding: 20px 0;
-    border-radius: 12px 12px 0 0;
     background: rgba(96, 100, 112, 0.6);
     border-bottom: none;
     color: white;
 }
+
+
+
 .tab:last-child{
     margin-right: 0;
 }
@@ -59,6 +61,7 @@
 .active{
     display: block;
 }
+
 .mountain-scene{
     background-image: url("../public/first-background-parallax.png");
     z-index: 1001;

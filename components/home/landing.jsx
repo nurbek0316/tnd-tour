@@ -11,7 +11,7 @@ export default function Landing() {
 
   const handleClick = () => {
     const screenHeight = window.innerHeight;
-    window.scrollTo({ top: screenHeight, behavior: 'smooth' });
+    window.scrollTo({ top: screenHeight/2 + 170, behavior: 'smooth' });
     setClicked(true);
   };
 
@@ -59,11 +59,12 @@ export default function Landing() {
             <p>Explore</p>
           </a>
         </div>
-        <div className="mb-[1000px]"></div>
+        <div className="mb-[100px]"></div>
       </div>
       <Mountains/>
-
       <NavTool />
+      <div className="mb-[900px]"></div>
+
     </>
   )
 }

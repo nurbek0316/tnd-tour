@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mountain-scene{
+    background-image: url("../public/first-background-parallax.png");
+    z-index: 1001;
+    width: 1000px;
+
+}

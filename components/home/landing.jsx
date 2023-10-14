@@ -1,8 +1,8 @@
 'use client';
 
 import Balancer from "react-wrap-balancer";
-import { useState } from "react";
-import { DEPLOY_URL } from "@/lib/constants";
+import { useState} from "react";
+import Mountains from "@/components/layout/mountains";
 
 export default function Landing() {
   const [clicked, setClicked] = useState(false);
@@ -57,8 +57,10 @@ export default function Landing() {
             <p>Explore</p>
           </a>
         </div>
-        <div className="mb-[1000px]"></div>
+        <div className="mb-[100px]"></div>
       </div>
+      <Mountains/>
+
     </>
   )
 }

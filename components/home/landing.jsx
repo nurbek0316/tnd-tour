@@ -5,13 +5,14 @@ import { useState} from "react";
 import Mountains from "@/components/layout/mountains";
 import NavTool from "@/components/layout/navtool";
 import { DEPLOY_URL } from "@/lib/constants";
+import MovingMountains from "@/components/layout/moving-mountains";
 
 export default function Landing() {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
     const screenHeight = window.innerHeight;
-    window.scrollTo({ top: screenHeight, behavior: 'smooth' });
+    window.scrollTo({ top: screenHeight/2 + 170, behavior: 'smooth' });
     setClicked(true);
   };
 
@@ -59,11 +60,15 @@ export default function Landing() {
             <p>Explore</p>
           </a>
         </div>
-        <div className="mb-[1000px]"></div>
+        <div className="mb-[100px]"></div>
       </div>
       <Mountains/>
 
+      {/*<MovingMountains/>*/}
+
       <NavTool />
+      <div className="mb-[900px]"></div>
+
     </>
   )
 }

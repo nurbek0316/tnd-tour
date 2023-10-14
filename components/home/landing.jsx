@@ -5,7 +5,6 @@ import { useState} from "react";
 import Mountains from "@/components/layout/mountains";
 import NavTool from "@/components/layout/navtool";
 import { DEPLOY_URL } from "@/lib/constants";
-import MovingMountains from "@/components/layout/moving-mountains";
 
 export default function Landing() {
   const [clicked, setClicked] = useState(false);
@@ -63,9 +62,6 @@ export default function Landing() {
         <div className="mb-[100px]"></div>
       </div>
       <Mountains/>
-
-      {/*<MovingMountains/>*/}
-
       <NavTool />
       <div className="mb-[900px]"></div>
 

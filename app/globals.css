@@ -22,7 +22,6 @@
 
 .tab{
     width: 100%;
-    margin-right: 8px;
     text-align: center;
     padding: 20px 0;
     background: rgba(96, 100, 112, 0.6);
@@ -32,12 +31,14 @@
 
 
 
+
 .tab:last-child{
     margin-right: 0;
 }
 .tab_list > .active{
     background-color: white;
     color: black;
+
 }
 
 .tab_pane{

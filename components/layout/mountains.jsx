@@ -10,7 +10,7 @@ export default function Mountains() {
         offset: ["start end", "end start"],
     });
 
-    const mountainY = useTransform(scrollYProgress, [0,1.5], ["-5%", "-40%"]);
+    const mountainY = useTransform(scrollYProgress, [-0.2,1.5], ["-5%", "-40%"]);
     const textX = useTransform(scrollYProgress, [0, 0.5], ["40%", "10%"]);
 
     return (

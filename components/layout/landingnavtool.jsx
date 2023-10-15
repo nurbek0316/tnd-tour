@@ -44,8 +44,8 @@ export default function Landingnavtool() {
                     <ul className="tab_list">
                         <li className={`tab ${activeTab === 'Flights' ? 'active' : ''}`} onClick={() => handleTabClick('Flights')}>Flights</li>
                         <li className={`tab ${activeTab === 'Stays' ? 'active' : ''}`} onClick={() => handleTabClick('Stays')}>Stays</li>
-                        <li className={`tab ${activeTab === 'Check-in' ? 'active' : ''}`} onClick={() => handleTabClick('Check-in')}>Check-in</li>
-                        <li className={`tab ${activeTab === 'Flight Status' ? 'active' : ''}`} onClick={() => handleTabClick('Flight Status')}>Flight Status</li>
+                        <li className={`tab ${activeTab === 'Tours' ? 'active' : ''}`} onClick={() => handleTabClick('Tours')}>Tours</li>
+                        <li className={`tab ${activeTab === 'Membership' ? 'active' : ''}`} onClick={() => handleTabClick('Membership')}>Membership</li>
                     </ul>
                 </div>
                 <div className="tab_content">
@@ -180,16 +180,155 @@ export default function Landingnavtool() {
                         </div>
                     </div>
 
-                    <div className={`tab_pane ${activeTab === 'Check-in' ? 'active' : ''}`} id="checkIn">
+
+
+                    {/*Tours*/}
+
+
+                    <div className={`tab_pane ${activeTab === 'Tours' ? 'active' : ''}`} id="tours">
                         <div className="tab_container">
-                            CheckIn tab is active
+                            <div className="flex justify-between mb-4">
+                                <div className="w-1/2">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Destination</label>
+                                    <input
+                                        type="text"
+                                        className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Going to"
+                                    />
+                                </div>
+                                <div className="w-1/2">
+                                    <div className='flex'>
+                                        <div className='w-1/2'>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">Cabin</label>
+                                            <input
+                                                type="number"
+                                                min="0"
+                                                className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                            />
+                                        </div>
+                                        <div className='w-1/2'><label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="adults">Adults:</label>
+                                            <input
+                                                type="number"
+                                                id="adults"
+                                                min="1"
+                                                value={adults}
+                                                className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+
+                                                onChange={handleAdultsChange}
+                                            />
+                                        </div>
+                                        <div className='w-1/2'>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="children">Children:</label>
+                                            <input
+                                                type="number"
+                                                id="children"
+                                                min="0"
+                                                className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+
+                                                value={children}
+                                                onChange={handleChildrenChange}
+                                            />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div className="flex  mb-4">
+                                <div className="w-1/3">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Transportation</label>
+                                    <select
+                                        className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        name="transportation"
+                                        id="transportation"
+                                    >
+                                        <option value="cruise">Cruise</option>
+                                        <option value="car">Car</option>
+                                        <option value="bus">Bus</option>
+                                        <option value="plane">Plane</option>
+                                    </select>
+                                </div>
+                                <div className="w-1/3">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Duration</label>
+                                    <div className="flex justify-between">
+                                        <input
+                                            type="number"
+                                            placeholder="min nights"
+                                            className="block w-1/2 py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        />
+                                        <input
+                                            type="number"
+                                            placeholder="max nights"
+                                            className="block w-1/2 py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        />
+                                    </div>
+                                </div>
+
+
+                                <div className='w-1/3'>
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
+                                    <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                        Continue
+                                    </button></div>
+                            </div>
                         </div>
                     </div>
-                    <div className={`tab_pane ${activeTab === 'Flight Status' ? 'active' : ''}`} id="flightStatus">
+
+
+
+                    {/*Membership*/}
+
+
+                    <div className={`tab_pane ${activeTab === 'Membership' ? 'active' : ''}`} id="membership">
                         <div className="tab_container">
-                            FlightStatus tab is active
+                            <div className="flex justify-between mb-4">
+                                <div className="w-1/2">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input
+                                        type="email"
+                                        className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Your Email"
+                                    />
+                                </div>
+
+                                <div className="w-1/2 flex">
+                                    <div className='w-1/2'>
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                    <input
+                                        type="text"
+                                        className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Your Name"
+                                    />
+                                    </div>
+                                    <div className='w-1/2'>
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">Surname</label>
+                                        <input
+                                            type="text"
+                                            className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="Your Surname"
+                                        />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="flex mb-4">
+                                <div className="w-1/2">
+                                    <h1 className="block mt-7 ml-2 font-medium text-gray-700 mb-2 text-2xl">Try our new membership
+                                        travel more, spend less
+                                    </h1>
+
+                                </div>
+                                <div className='w-1/2'>
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
+                                    <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                        Continue
+                                    </button></div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

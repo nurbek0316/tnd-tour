@@ -1,0 +1,37 @@
+{
+    "stays": [
+      {
+        "id": 1,
+        "city": "Almaty",
+        "hotel": "Hotel Kazakhstan",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/square600/16723416.webp?k=17287bc3c0fabd0570687fcfd9adb4947e337064aa9b1727c5b1de19c2249746&o=",
+        "desc": "Offering stylish rooms with great views, free Wi-Fi, and a 24-hour restaurant serving European and Turkish cuisine, this design hotel in Almaty is 3.1 mi from the Atakent Exhibition Center.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "city": "Almaty",
+        "hotel": "Rixos Almaty",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/square600/346273059.webp?k=1e6fde8ebb937678ed0378895e4ebfbab1310dfb6c05462f61f9f36021974f88&o=",
+        "desc": "This luxury 5-star hotel is located in Almaty city center, 0.6 mi from Nikolai Cathedral. Rixos Almaty Hotel offers modern rooms with free Wi-Fi internet and a spa with swimming pool.",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "city": "Shymkent",
+        "hotel": "Aidana Plaza Hotel",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/square600/114467917.webp?k=71a01f18e196be5c0c5efb6fdae44b991adaa442214c75ba41fe0886382bc9f3&o=",
+        "desc": "Aidana Plaza Hotel in Shymkent has 4-star accommodations with a restaurant and a bar. The property has a 24-hour front desk, airport transportation, room service and free WiFi throughout the property.",
+        "rating": 4
+      },
+      {
+        "id": 4,
+        "city": "Kostanay",
+        "hotel": "Hotel Astam",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/square600/330214888.webp?k=badc83125cb6d7732e2f398ed5ba5189c088516164acf6e892e8cba3095f6c00&o=",
+        "desc": "Hotel Astam features a garden, shared lounge, a restaurant and bar in Kostanay. The hotel provides both free WiFi and free private parking.",
+        "rating": 3.5
+      }
+    ]
+  }
+  

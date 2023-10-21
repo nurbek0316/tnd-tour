@@ -16,10 +16,10 @@ export default function Mountains() {
     return (
         <div
             ref={ref}
-            className="relative grid h-[500px] w-full max-w-full place-items-center overflow-hidden"
+            className="relative grid h-[500px] w-full max-w-[1375px] place-items-center overflow-hidden"
         >
             <div
-                className="absolute inset-10 mb-0 z-0 h-[400px] rounded-3xl overflow-hidden"
+                className="absolute inset-10 mb-0 z-0 h-[400px]  rounded-3xl overflow-hidden"
             >
                 <div
                     className="w-full h-full rounded-3xl"

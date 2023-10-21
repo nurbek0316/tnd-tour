@@ -63,6 +63,7 @@ export default function Landing() {
       </div>
       <Mountains/>
       <Landingnavtool />
+
       <div className="mb-[900px]"></div>
 
     </>

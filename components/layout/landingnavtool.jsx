@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Landingnavtool() {
     const [activeTab, setActiveTab] = useState('Flights');
@@ -100,9 +101,11 @@ export default function Landingnavtool() {
                                 </div>
                                 <div className='w-1/4'>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
-                                    <button className="flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
-                                    Continue
-                                </button></div>
+                                    <Link href="/flights"> <button className="flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                        Continue
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
 
                         </div>
@@ -172,9 +175,10 @@ export default function Landingnavtool() {
                                 </div>
                                 <div className='w-1/3'>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
-                                    <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                    <Link href="/stays"><button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
                                         Continue
-                                    </button></div>
+                                    </button></Link>
+                                </div>
                             </div>
 
                         </div>
@@ -268,9 +272,9 @@ export default function Landingnavtool() {
 
                                 <div className='w-1/3'>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
-                                    <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                    <Link href="/tours"><button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
                                         Continue
-                                    </button></div>
+                                    </button></Link></div>
                             </div>
                         </div>
                     </div>
@@ -321,9 +325,9 @@ export default function Landingnavtool() {
                                 </div>
                                 <div className='w-1/2'>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">&nbsp;</label>
-                                    <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
+                                    <Link href="/membership"> <button className=" flex bg-cyan-500 hover:bg-stone-600 text-white font-bold ml-auto justify-center w-[170px] py-2 px-4 rounded-md transition-[0.3s]">
                                         Continue
-                                    </button></div>
+                                    </button></Link></div>
                             </div>
 
                         </div>

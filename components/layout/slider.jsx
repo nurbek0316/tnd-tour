@@ -12,6 +12,9 @@ export default function Slider() {
         return sliderStaysData.staysData.find(stay => stay.id === id);
     }
 
+
+
+
     return (
         <>
             <div className='slider-container'>

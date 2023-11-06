@@ -8,8 +8,6 @@ import StayDetail from '/components/layout/StayDetail';
 import sliderStaysData from "/mockapi/stays.json";
 
 const StayPage = ({params}) => {
-
-
     const stay = sliderStaysData.staysData.find(stay => stay.id === Number(params.id));
 
     if (!stay) {

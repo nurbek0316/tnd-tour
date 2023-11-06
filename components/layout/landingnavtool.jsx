@@ -4,17 +4,38 @@ import Link from "next/link";
 export default function Landingnavtool() {
     const [activeTab, setActiveTab] = useState('Flights');
     const [inputValue, setInputValue] = useState('');
+
+    // For stays
     const [adults, setAdults] = useState(1);
     const [children, setChildren] = useState(0);
+    const [departureDate, setDepartureDate] = useState('');
+    const [returnDate, setReturnDate] = useState('');
+    function handleAdultsChange(event) {
+        const value = parseInt(event.target.value, 10);
+        setAdults(value);
+        localStorage.setItem('adults', value);
+    }
+    function handleChildrenChange(event) {
+        const value = parseInt(event.target.value, 10);
+        setChildren(value);
+        localStorage.setItem('children', value);
+    }
+    function handleDepartureDateChange(event) {
+        const value = event.target.value;
+        setDepartureDate(value);
+        localStorage.setItem('departureDate', value);
+    }
+    function handleReturnDateChange(event) {
+        const value = event.target.value;
+        setReturnDate(value);
+        localStorage.setItem('returnDate', value);
+    }
+
+
+
     const [results, setResults] = useState([]);
     const [place, setPlace] = useState('')
-    const handleAdultsChange = (e) => {
-        setAdults(e.target.value);
-    };
 
-    const handleChildrenChange = (e) => {
-        setChildren(e.target.value);
-    };
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -119,15 +140,8 @@ export default function Landingnavtool() {
                     <div className={`tab_pane ${activeTab === 'Stays' ? 'active' : ''}`} id="myStays">
                         <div className="tab_container">
                             <div className="flex justify-between mb-4">
-                                <div className="w-1/2">
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">Destination</label>
-                                    <input
-                                        type="text"
-                                        className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
-                                        placeholder="Destination city"
-                                    />
-                                </div>
-                                <div className="w-1/2">
+
+                                <div className="w-full">
                                     <div className='flex'>
                                     <div className='w-1/2'><label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="adults">Adults:</label>
                                     <input
@@ -164,6 +178,8 @@ export default function Landingnavtool() {
                                     <input
                                         type="date"
                                         className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        value={departureDate}
+                                        onChange={handleDepartureDateChange}
                                     />
                                 </div>
                                 <div className="w-1/3">
@@ -171,6 +187,9 @@ export default function Landingnavtool() {
                                     <input
                                         type="date"
                                         className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500"
+                                        value={returnDate}
+                                        onChange={handleReturnDateChange}
+
                                     />
                                 </div>
                                 <div className='w-1/3'>

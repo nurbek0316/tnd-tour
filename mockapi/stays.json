@@ -31,6 +31,54 @@
         "img": "https://cf.bstatic.com/xdata/images/hotel/square600/330214888.webp?k=badc83125cb6d7732e2f398ed5ba5189c088516164acf6e892e8cba3095f6c00&o=",
         "desc": "Hotel Astam features a garden, shared lounge, a restaurant and bar in Kostanay. The hotel provides both free WiFi and free private parking.",
         "rating": 3.5
+      },
+      {
+        "id": 5,
+        "city": "Zhezkazgan",
+        "hotel": "Bay House Hotel",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square600/457073471.webp?k=4a37bbb7895d2409d5f4ef16843021e1dd023ea5e65334e77e3bde9ff0a2cf1a&o=",
+        "desc": "Located in Zhezkazgan, 2.2 miles from Atakent-Expo and 2.4 miles from Kasteev State Museum of Arts, BAYHOUSE - Апартаменты премиум класса в ЖК Terracotta offers air conditioning. The apartment has access to a restaurant and free Wifithroughout the property.",
+        "rating": 3.5
+      },
+      {
+        "id": 6,
+        "city": "Taldykorgan",
+        "hotel": "Grushevy Hotel",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square600/38845509.webp?k=05fdbf30c398a8d75489e7a0b07039f289a3c244329c502bb55d63aedbf051dc&o=",
+        "desc": "A modern 3-star hotel in a quiet neighborhood of Taldykorgan, Grushevy Hospitality Boutique offers a restaurant and a sauna offering 30% discount to guests. Free WiFi is provided in public areas.",
+        "rating": 3.5
+      },
+      {
+        "id": 7,
+        "city": "New York",
+        "hotel": "45 Times Square Hotel",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square200/442811339.webp?k=6386325824fccfff7550aa1cf3f7bfaba2eb61fda28a9031249cd4916196d415&o=",
+        "desc": "Featuring 3-star accommodations, 45 Times Square Hotel is located in New York, 656 feet from Times Square and 1640 feet from Radio City Music Hall. With free WiFi, this 3-star hotel offers a 24-hour front desk and a tour desk. The property is 1969 feet from Bryant Park, and within 984 feet of the city center.",
+        "rating": 3.0
+      },
+      {
+        "id": 8,
+        "city": "New York",
+        "hotel": "Hotel Edison Times Square",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square200/36715258.webp?k=2aad7658fcd54f3dfa5660441043617cd6ff307c89e26a23167e3073117f0652&o=",
+        "desc": "Ideally located in Times Square, this Manhattan hotel has been around since 1930. With distinct influences of the Art Deco era in the design of the lobby and the exterior, Hotel Edison offers Classic and Signature rooms and suites.",
+        "rating": 4.5
+      },
+      {
+        "id": 9,
+        "city": "Budapest",
+        "hotel": "Hotel Metro",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square200/440937659.webp?k=8f5e459c5a5f996da11efe05b951b44c7bc1d82043e4d83fce028c74800d21d0&o=",
+        "desc": "Hotel Metro is located 0.6 mi from the Parliament, in a quiet side street between Nyugati Railway Station and Westend City Center shopping mall. It offers free WiFi access.\n",
+        "rating": 3.0
+      },
+      {
+        "id": 10,
+        "city": "Budapest",
+        "hotel": "Hunguest Hotel Apollo",
+        "img": "https://cf2.bstatic.com/xdata/images/hotel/square200/24188513.webp?k=15fb4bbe28b7f3051fe6a49279cf958ab1fd297ab54c3c11a7ebdc34331a1636&o=",
+        "desc": "Located 1312 feet from the Budapest center. The Hunguest Hotel Apollo offers therapeutic and cosmetic treatments in elegant surroundings. Free WIFI is available throughout the hotel, both in the lobby and in the rooms",
+        "rating": 3.5
       }
     ]
   }

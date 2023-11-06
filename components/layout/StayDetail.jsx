@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Slider.css'
+import ReservedModal from "@/components/layout/reserved-modal";
 
 const StayDetail = ({ stay }) => {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
     return (
         <div className='stay-detail'>
             <h2>{stay.hotel}</h2>
@@ -9,6 +19,11 @@ const StayDetail = ({ stay }) => {
             <img src={stay.img} alt={stay.hotel} />
             <p>{stay.desc}</p>
             <p>Rating: {stay.rating}</p>
+
+
+            <button onClick={openModal}>Reserve</button>
+            <ReservedModal showModal={showModal} setShowModal={setShowModal} />
+
         </div>
     );
 }

@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect} from 'react';
 import sliderStaysData from "mockapi/stays.json"
+import Slider from "@/components/layout/slider";
 
 
 
-export default function Slider() {
+export default function Stays() {
     const [sliderValue, setSliderValue] = useState(sliderStaysData.staysData);
 
-    // Function to get a stay by id
     const getStayById = (id) => {
         return sliderStaysData.staysData.find(stay => stay.id === id);
     }
@@ -16,15 +16,11 @@ export default function Slider() {
     // Example of how to use the getStayById function
     const stayWithId2 = getStayById(2);
 
-    console.log(stayWithId2);
+    // console.log(stayWithId2);
 
     return (
         <>
-            <div className='slider-container'>
-                <div className='slider-inner'>
-                    <button></button>
-                </div>
-            </div>
+            <Slider/>
         </>
     )
 }
